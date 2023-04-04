@@ -579,7 +579,8 @@ void FileGenerator::GenerateSourceDefaultInstance(int idx, io::Printer* p) {
           };
 
           PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT$ dllexport_decl$
-              PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 const $type$ $name$;
+              PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+                  PROTOBUF_SECTION_VARIABLE(.data.rel.ro) const $type$ $name$;
         )cc");
   }
 

@@ -12263,8 +12263,8 @@ constexpr ::_pbi::TcParseTable<3, 5, 0, 106, 2> SourceCodeInfo_Location::_table_
   {
     int byte_size = _impl_._path_cached_byte_size_.Get();
     if (byte_size > 0) {
-      target = stream->WriteInt32Packed(1, _internal_path(),
-                                                 byte_size, target);
+      target = stream->WriteInt32Packed(
+          1, _internal_path(), byte_size, target);
     }
   }
 
@@ -12272,8 +12272,8 @@ constexpr ::_pbi::TcParseTable<3, 5, 0, 106, 2> SourceCodeInfo_Location::_table_
   {
     int byte_size = _impl_._span_cached_byte_size_.Get();
     if (byte_size > 0) {
-      target = stream->WriteInt32Packed(2, _internal_span(),
-                                                 byte_size, target);
+      target = stream->WriteInt32Packed(
+          2, _internal_span(), byte_size, target);
     }
   }
 
@@ -12783,8 +12783,8 @@ constexpr ::_pbi::TcParseTable<3, 5, 1, 64, 2> GeneratedCodeInfo_Annotation::_ta
   {
     int byte_size = _impl_._path_cached_byte_size_.Get();
     if (byte_size > 0) {
-      target = stream->WriteInt32Packed(1, _internal_path(),
-                                                 byte_size, target);
+      target = stream->WriteInt32Packed(
+          1, _internal_path(), byte_size, target);
     }
   }
 
