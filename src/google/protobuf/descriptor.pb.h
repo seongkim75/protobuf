@@ -718,6 +718,9 @@ class PROTOBUF_EXPORT FileDescriptorSet final :
   explicit PROTOBUF_CONSTEXPR FileDescriptorSet(::google::protobuf::internal::ConstantInitialized);
 
   FileDescriptorSet(const FileDescriptorSet& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  FileDescriptorSet(::google::protobuf::Arena*, const FileDescriptorSet& rhs);
+  #endif
   FileDescriptorSet(FileDescriptorSet&& from) noexcept
     : FileDescriptorSet() {
     *this = ::std::move(from);
@@ -867,6 +870,12 @@ class PROTOBUF_EXPORT FileDescriptorSet final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::RepeatedPtrField< ::google::protobuf::FileDescriptorProto > file_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER;
@@ -884,6 +893,9 @@ class PROTOBUF_EXPORT FileDescriptorProto final :
   explicit PROTOBUF_CONSTEXPR FileDescriptorProto(::google::protobuf::internal::ConstantInitialized);
 
   FileDescriptorProto(const FileDescriptorProto& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  FileDescriptorProto(::google::protobuf::Arena*, const FileDescriptorProto& rhs);
+  #endif
   FileDescriptorProto(FileDescriptorProto&& from) noexcept
     : FileDescriptorProto() {
     *this = ::std::move(from);
@@ -1261,6 +1273,12 @@ class PROTOBUF_EXPORT FileDescriptorProto final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::HasBits<1> _has_bits_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     ::google::protobuf::RepeatedPtrField<std::string> dependency_;
@@ -1291,6 +1309,9 @@ class PROTOBUF_EXPORT DescriptorProto_ExtensionRange final :
   explicit PROTOBUF_CONSTEXPR DescriptorProto_ExtensionRange(::google::protobuf::internal::ConstantInitialized);
 
   DescriptorProto_ExtensionRange(const DescriptorProto_ExtensionRange& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  DescriptorProto_ExtensionRange(::google::protobuf::Arena*, const DescriptorProto_ExtensionRange& rhs);
+  #endif
   DescriptorProto_ExtensionRange(DescriptorProto_ExtensionRange&& from) noexcept
     : DescriptorProto_ExtensionRange() {
     *this = ::std::move(from);
@@ -1461,6 +1482,12 @@ class PROTOBUF_EXPORT DescriptorProto_ExtensionRange final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::HasBits<1> _has_bits_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     ::google::protobuf::ExtensionRangeOptions* options_;
@@ -1481,6 +1508,9 @@ class PROTOBUF_EXPORT DescriptorProto_ReservedRange final :
   explicit PROTOBUF_CONSTEXPR DescriptorProto_ReservedRange(::google::protobuf::internal::ConstantInitialized);
 
   DescriptorProto_ReservedRange(const DescriptorProto_ReservedRange& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  DescriptorProto_ReservedRange(::google::protobuf::Arena*, const DescriptorProto_ReservedRange& rhs);
+  #endif
   DescriptorProto_ReservedRange(DescriptorProto_ReservedRange&& from) noexcept
     : DescriptorProto_ReservedRange() {
     *this = ::std::move(from);
@@ -1635,6 +1665,12 @@ class PROTOBUF_EXPORT DescriptorProto_ReservedRange final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::HasBits<1> _has_bits_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     ::int32_t start_;
@@ -1654,6 +1690,9 @@ class PROTOBUF_EXPORT DescriptorProto final :
   explicit PROTOBUF_CONSTEXPR DescriptorProto(::google::protobuf::internal::ConstantInitialized);
 
   DescriptorProto(const DescriptorProto& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  DescriptorProto(::google::protobuf::Arena*, const DescriptorProto& rhs);
+  #endif
   DescriptorProto(DescriptorProto&& from) noexcept
     : DescriptorProto() {
     *this = ::std::move(from);
@@ -1983,6 +2022,12 @@ class PROTOBUF_EXPORT DescriptorProto final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::HasBits<1> _has_bits_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     ::google::protobuf::RepeatedPtrField< ::google::protobuf::FieldDescriptorProto > field_;
@@ -2010,6 +2055,9 @@ class PROTOBUF_EXPORT ExtensionRangeOptions_Declaration final :
   explicit PROTOBUF_CONSTEXPR ExtensionRangeOptions_Declaration(::google::protobuf::internal::ConstantInitialized);
 
   ExtensionRangeOptions_Declaration(const ExtensionRangeOptions_Declaration& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  ExtensionRangeOptions_Declaration(::google::protobuf::Arena*, const ExtensionRangeOptions_Declaration& rhs);
+  #endif
   ExtensionRangeOptions_Declaration(ExtensionRangeOptions_Declaration&& from) noexcept
     : ExtensionRangeOptions_Declaration() {
     *this = ::std::move(from);
@@ -2212,6 +2260,12 @@ class PROTOBUF_EXPORT ExtensionRangeOptions_Declaration final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::HasBits<1> _has_bits_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     ::google::protobuf::internal::ArenaStringPtr full_name_;
@@ -2234,6 +2288,9 @@ class PROTOBUF_EXPORT ExtensionRangeOptions final :
   explicit PROTOBUF_CONSTEXPR ExtensionRangeOptions(::google::protobuf::internal::ConstantInitialized);
 
   ExtensionRangeOptions(const ExtensionRangeOptions& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  ExtensionRangeOptions(::google::protobuf::Arena*, const ExtensionRangeOptions& rhs);
+  #endif
   ExtensionRangeOptions(ExtensionRangeOptions&& from) noexcept
     : ExtensionRangeOptions() {
     *this = ::std::move(from);
@@ -2603,6 +2660,12 @@ class PROTOBUF_EXPORT ExtensionRangeOptions final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::ExtensionSet _extensions_;
 
     ::google::protobuf::internal::HasBits<1> _has_bits_;
@@ -2626,6 +2689,9 @@ class PROTOBUF_EXPORT FieldDescriptorProto final :
   explicit PROTOBUF_CONSTEXPR FieldDescriptorProto(::google::protobuf::internal::ConstantInitialized);
 
   FieldDescriptorProto(const FieldDescriptorProto& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  FieldDescriptorProto(::google::protobuf::Arena*, const FieldDescriptorProto& rhs);
+  #endif
   FieldDescriptorProto(FieldDescriptorProto&& from) noexcept
     : FieldDescriptorProto() {
     *this = ::std::move(from);
@@ -2979,6 +3045,12 @@ class PROTOBUF_EXPORT FieldDescriptorProto final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::HasBits<1> _has_bits_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     ::google::protobuf::internal::ArenaStringPtr name_;
@@ -3007,6 +3079,9 @@ class PROTOBUF_EXPORT OneofDescriptorProto final :
   explicit PROTOBUF_CONSTEXPR OneofDescriptorProto(::google::protobuf::internal::ConstantInitialized);
 
   OneofDescriptorProto(const OneofDescriptorProto& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  OneofDescriptorProto(::google::protobuf::Arena*, const OneofDescriptorProto& rhs);
+  #endif
   OneofDescriptorProto(OneofDescriptorProto&& from) noexcept
     : OneofDescriptorProto() {
     *this = ::std::move(from);
@@ -3171,6 +3246,12 @@ class PROTOBUF_EXPORT OneofDescriptorProto final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::HasBits<1> _has_bits_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     ::google::protobuf::internal::ArenaStringPtr name_;
@@ -3190,6 +3271,9 @@ class PROTOBUF_EXPORT EnumDescriptorProto_EnumReservedRange final :
   explicit PROTOBUF_CONSTEXPR EnumDescriptorProto_EnumReservedRange(::google::protobuf::internal::ConstantInitialized);
 
   EnumDescriptorProto_EnumReservedRange(const EnumDescriptorProto_EnumReservedRange& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  EnumDescriptorProto_EnumReservedRange(::google::protobuf::Arena*, const EnumDescriptorProto_EnumReservedRange& rhs);
+  #endif
   EnumDescriptorProto_EnumReservedRange(EnumDescriptorProto_EnumReservedRange&& from) noexcept
     : EnumDescriptorProto_EnumReservedRange() {
     *this = ::std::move(from);
@@ -3344,6 +3428,12 @@ class PROTOBUF_EXPORT EnumDescriptorProto_EnumReservedRange final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::HasBits<1> _has_bits_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     ::int32_t start_;
@@ -3363,6 +3453,9 @@ class PROTOBUF_EXPORT EnumDescriptorProto final :
   explicit PROTOBUF_CONSTEXPR EnumDescriptorProto(::google::protobuf::internal::ConstantInitialized);
 
   EnumDescriptorProto(const EnumDescriptorProto& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  EnumDescriptorProto(::google::protobuf::Arena*, const EnumDescriptorProto& rhs);
+  #endif
   EnumDescriptorProto(EnumDescriptorProto&& from) noexcept
     : EnumDescriptorProto() {
     *this = ::std::move(from);
@@ -3596,6 +3689,12 @@ class PROTOBUF_EXPORT EnumDescriptorProto final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::HasBits<1> _has_bits_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     ::google::protobuf::RepeatedPtrField< ::google::protobuf::EnumValueDescriptorProto > value_;
@@ -3618,6 +3717,9 @@ class PROTOBUF_EXPORT EnumValueDescriptorProto final :
   explicit PROTOBUF_CONSTEXPR EnumValueDescriptorProto(::google::protobuf::internal::ConstantInitialized);
 
   EnumValueDescriptorProto(const EnumValueDescriptorProto& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  EnumValueDescriptorProto(::google::protobuf::Arena*, const EnumValueDescriptorProto& rhs);
+  #endif
   EnumValueDescriptorProto(EnumValueDescriptorProto&& from) noexcept
     : EnumValueDescriptorProto() {
     *this = ::std::move(from);
@@ -3794,6 +3896,12 @@ class PROTOBUF_EXPORT EnumValueDescriptorProto final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::HasBits<1> _has_bits_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     ::google::protobuf::internal::ArenaStringPtr name_;
@@ -3814,6 +3922,9 @@ class PROTOBUF_EXPORT ServiceDescriptorProto final :
   explicit PROTOBUF_CONSTEXPR ServiceDescriptorProto(::google::protobuf::internal::ConstantInitialized);
 
   ServiceDescriptorProto(const ServiceDescriptorProto& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  ServiceDescriptorProto(::google::protobuf::Arena*, const ServiceDescriptorProto& rhs);
+  #endif
   ServiceDescriptorProto(ServiceDescriptorProto&& from) noexcept
     : ServiceDescriptorProto() {
     *this = ::std::move(from);
@@ -3997,6 +4108,12 @@ class PROTOBUF_EXPORT ServiceDescriptorProto final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::HasBits<1> _has_bits_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     ::google::protobuf::RepeatedPtrField< ::google::protobuf::MethodDescriptorProto > method_;
@@ -4017,6 +4134,9 @@ class PROTOBUF_EXPORT MethodDescriptorProto final :
   explicit PROTOBUF_CONSTEXPR MethodDescriptorProto(::google::protobuf::internal::ConstantInitialized);
 
   MethodDescriptorProto(const MethodDescriptorProto& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  MethodDescriptorProto(::google::protobuf::Arena*, const MethodDescriptorProto& rhs);
+  #endif
   MethodDescriptorProto(MethodDescriptorProto&& from) noexcept
     : MethodDescriptorProto() {
     *this = ::std::move(from);
@@ -4241,6 +4361,12 @@ class PROTOBUF_EXPORT MethodDescriptorProto final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::HasBits<1> _has_bits_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     ::google::protobuf::internal::ArenaStringPtr name_;
@@ -4264,6 +4390,9 @@ class PROTOBUF_EXPORT FileOptions final :
   explicit PROTOBUF_CONSTEXPR FileOptions(::google::protobuf::internal::ConstantInitialized);
 
   FileOptions(const FileOptions& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  FileOptions(::google::protobuf::Arena*, const FileOptions& rhs);
+  #endif
   FileOptions(FileOptions&& from) noexcept
     : FileOptions() {
     *this = ::std::move(from);
@@ -4901,6 +5030,12 @@ class PROTOBUF_EXPORT FileOptions final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::ExtensionSet _extensions_;
 
     ::google::protobuf::internal::HasBits<1> _has_bits_;
@@ -4942,6 +5077,9 @@ class PROTOBUF_EXPORT MessageOptions final :
   explicit PROTOBUF_CONSTEXPR MessageOptions(::google::protobuf::internal::ConstantInitialized);
 
   MessageOptions(const MessageOptions& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  MessageOptions(::google::protobuf::Arena*, const MessageOptions& rhs);
+  #endif
   MessageOptions(MessageOptions&& from) noexcept
     : MessageOptions() {
     *this = ::std::move(from);
@@ -5318,6 +5456,12 @@ class PROTOBUF_EXPORT MessageOptions final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::ExtensionSet _extensions_;
 
     ::google::protobuf::internal::HasBits<1> _has_bits_;
@@ -5344,6 +5488,9 @@ class PROTOBUF_EXPORT FieldOptions_EditionDefault final :
   explicit PROTOBUF_CONSTEXPR FieldOptions_EditionDefault(::google::protobuf::internal::ConstantInitialized);
 
   FieldOptions_EditionDefault(const FieldOptions_EditionDefault& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  FieldOptions_EditionDefault(::google::protobuf::Arena*, const FieldOptions_EditionDefault& rhs);
+  #endif
   FieldOptions_EditionDefault(FieldOptions_EditionDefault&& from) noexcept
     : FieldOptions_EditionDefault() {
     *this = ::std::move(from);
@@ -5510,6 +5657,12 @@ class PROTOBUF_EXPORT FieldOptions_EditionDefault final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::HasBits<1> _has_bits_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     ::google::protobuf::internal::ArenaStringPtr edition_;
@@ -5529,6 +5682,9 @@ class PROTOBUF_EXPORT FieldOptions final :
   explicit PROTOBUF_CONSTEXPR FieldOptions(::google::protobuf::internal::ConstantInitialized);
 
   FieldOptions(const FieldOptions& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  FieldOptions(::google::protobuf::Arena*, const FieldOptions& rhs);
+  #endif
   FieldOptions(FieldOptions&& from) noexcept
     : FieldOptions() {
     *this = ::std::move(from);
@@ -6085,6 +6241,12 @@ class PROTOBUF_EXPORT FieldOptions final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::ExtensionSet _extensions_;
 
     ::google::protobuf::internal::HasBits<1> _has_bits_;
@@ -6117,6 +6279,9 @@ class PROTOBUF_EXPORT OneofOptions final :
   explicit PROTOBUF_CONSTEXPR OneofOptions(::google::protobuf::internal::ConstantInitialized);
 
   OneofOptions(const OneofOptions& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  OneofOptions(::google::protobuf::Arena*, const OneofOptions& rhs);
+  #endif
   OneofOptions(OneofOptions&& from) noexcept
     : OneofOptions() {
     *this = ::std::move(from);
@@ -6433,6 +6598,12 @@ class PROTOBUF_EXPORT OneofOptions final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::ExtensionSet _extensions_;
 
     ::google::protobuf::internal::HasBits<1> _has_bits_;
@@ -6454,6 +6625,9 @@ class PROTOBUF_EXPORT EnumOptions final :
   explicit PROTOBUF_CONSTEXPR EnumOptions(::google::protobuf::internal::ConstantInitialized);
 
   EnumOptions(const EnumOptions& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  EnumOptions(::google::protobuf::Arena*, const EnumOptions& rhs);
+  #endif
   EnumOptions(EnumOptions&& from) noexcept
     : EnumOptions() {
     *this = ::std::move(from);
@@ -6806,6 +6980,12 @@ class PROTOBUF_EXPORT EnumOptions final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::ExtensionSet _extensions_;
 
     ::google::protobuf::internal::HasBits<1> _has_bits_;
@@ -6830,6 +7010,9 @@ class PROTOBUF_EXPORT EnumValueOptions final :
   explicit PROTOBUF_CONSTEXPR EnumValueOptions(::google::protobuf::internal::ConstantInitialized);
 
   EnumValueOptions(const EnumValueOptions& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  EnumValueOptions(::google::protobuf::Arena*, const EnumValueOptions& rhs);
+  #endif
   EnumValueOptions(EnumValueOptions&& from) noexcept
     : EnumValueOptions() {
     *this = ::std::move(from);
@@ -7170,6 +7353,12 @@ class PROTOBUF_EXPORT EnumValueOptions final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::ExtensionSet _extensions_;
 
     ::google::protobuf::internal::HasBits<1> _has_bits_;
@@ -7193,6 +7382,9 @@ class PROTOBUF_EXPORT ServiceOptions final :
   explicit PROTOBUF_CONSTEXPR ServiceOptions(::google::protobuf::internal::ConstantInitialized);
 
   ServiceOptions(const ServiceOptions& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  ServiceOptions(::google::protobuf::Arena*, const ServiceOptions& rhs);
+  #endif
   ServiceOptions(ServiceOptions&& from) noexcept
     : ServiceOptions() {
     *this = ::std::move(from);
@@ -7521,6 +7713,12 @@ class PROTOBUF_EXPORT ServiceOptions final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::ExtensionSet _extensions_;
 
     ::google::protobuf::internal::HasBits<1> _has_bits_;
@@ -7543,6 +7741,9 @@ class PROTOBUF_EXPORT MethodOptions final :
   explicit PROTOBUF_CONSTEXPR MethodOptions(::google::protobuf::internal::ConstantInitialized);
 
   MethodOptions(const MethodOptions& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  MethodOptions(::google::protobuf::Arena*, const MethodOptions& rhs);
+  #endif
   MethodOptions(MethodOptions&& from) noexcept
     : MethodOptions() {
     *this = ::std::move(from);
@@ -7904,6 +8105,12 @@ class PROTOBUF_EXPORT MethodOptions final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::ExtensionSet _extensions_;
 
     ::google::protobuf::internal::HasBits<1> _has_bits_;
@@ -7927,6 +8134,9 @@ class PROTOBUF_EXPORT UninterpretedOption_NamePart final :
   explicit PROTOBUF_CONSTEXPR UninterpretedOption_NamePart(::google::protobuf::internal::ConstantInitialized);
 
   UninterpretedOption_NamePart(const UninterpretedOption_NamePart& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  UninterpretedOption_NamePart(::google::protobuf::Arena*, const UninterpretedOption_NamePart& rhs);
+  #endif
   UninterpretedOption_NamePart(UninterpretedOption_NamePart&& from) noexcept
     : UninterpretedOption_NamePart() {
     *this = ::std::move(from);
@@ -8087,6 +8297,12 @@ class PROTOBUF_EXPORT UninterpretedOption_NamePart final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::HasBits<1> _has_bits_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     ::google::protobuf::internal::ArenaStringPtr name_part_;
@@ -8106,6 +8322,9 @@ class PROTOBUF_EXPORT UninterpretedOption final :
   explicit PROTOBUF_CONSTEXPR UninterpretedOption(::google::protobuf::internal::ConstantInitialized);
 
   UninterpretedOption(const UninterpretedOption& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  UninterpretedOption(::google::protobuf::Arena*, const UninterpretedOption& rhs);
+  #endif
   UninterpretedOption(UninterpretedOption&& from) noexcept
     : UninterpretedOption() {
     *this = ::std::move(from);
@@ -8347,6 +8566,12 @@ class PROTOBUF_EXPORT UninterpretedOption final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::HasBits<1> _has_bits_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     ::google::protobuf::RepeatedPtrField< ::google::protobuf::UninterpretedOption_NamePart > name_;
@@ -8371,6 +8596,9 @@ class PROTOBUF_EXPORT FeatureSet final :
   explicit PROTOBUF_CONSTEXPR FeatureSet(::google::protobuf::internal::ConstantInitialized);
 
   FeatureSet(const FeatureSet& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  FeatureSet(::google::protobuf::Arena*, const FeatureSet& rhs);
+  #endif
   FeatureSet(FeatureSet&& from) noexcept
     : FeatureSet() {
     *this = ::std::move(from);
@@ -8852,6 +9080,12 @@ class PROTOBUF_EXPORT FeatureSet final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::ExtensionSet _extensions_;
 
     ::google::protobuf::internal::HasBits<1> _has_bits_;
@@ -8877,6 +9111,9 @@ class PROTOBUF_EXPORT SourceCodeInfo_Location final :
   explicit PROTOBUF_CONSTEXPR SourceCodeInfo_Location(::google::protobuf::internal::ConstantInitialized);
 
   SourceCodeInfo_Location(const SourceCodeInfo_Location& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  SourceCodeInfo_Location(::google::protobuf::Arena*, const SourceCodeInfo_Location& rhs);
+  #endif
   SourceCodeInfo_Location(SourceCodeInfo_Location&& from) noexcept
     : SourceCodeInfo_Location() {
     *this = ::std::move(from);
@@ -9110,6 +9347,12 @@ class PROTOBUF_EXPORT SourceCodeInfo_Location final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::HasBits<1> _has_bits_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     ::google::protobuf::RepeatedField<::int32_t> path_;
@@ -9134,6 +9377,9 @@ class PROTOBUF_EXPORT SourceCodeInfo final :
   explicit PROTOBUF_CONSTEXPR SourceCodeInfo(::google::protobuf::internal::ConstantInitialized);
 
   SourceCodeInfo(const SourceCodeInfo& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  SourceCodeInfo(::google::protobuf::Arena*, const SourceCodeInfo& rhs);
+  #endif
   SourceCodeInfo(SourceCodeInfo&& from) noexcept
     : SourceCodeInfo() {
     *this = ::std::move(from);
@@ -9285,6 +9531,12 @@ class PROTOBUF_EXPORT SourceCodeInfo final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::RepeatedPtrField< ::google::protobuf::SourceCodeInfo_Location > location_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER;
@@ -9302,6 +9554,9 @@ class PROTOBUF_EXPORT GeneratedCodeInfo_Annotation final :
   explicit PROTOBUF_CONSTEXPR GeneratedCodeInfo_Annotation(::google::protobuf::internal::ConstantInitialized);
 
   GeneratedCodeInfo_Annotation(const GeneratedCodeInfo_Annotation& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  GeneratedCodeInfo_Annotation(::google::protobuf::Arena*, const GeneratedCodeInfo_Annotation& rhs);
+  #endif
   GeneratedCodeInfo_Annotation(GeneratedCodeInfo_Annotation&& from) noexcept
     : GeneratedCodeInfo_Annotation() {
     *this = ::std::move(from);
@@ -9526,6 +9781,12 @@ class PROTOBUF_EXPORT GeneratedCodeInfo_Annotation final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::internal::HasBits<1> _has_bits_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     ::google::protobuf::RepeatedField<::int32_t> path_;
@@ -9549,6 +9810,9 @@ class PROTOBUF_EXPORT GeneratedCodeInfo final :
   explicit PROTOBUF_CONSTEXPR GeneratedCodeInfo(::google::protobuf::internal::ConstantInitialized);
 
   GeneratedCodeInfo(const GeneratedCodeInfo& from);
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+  GeneratedCodeInfo(::google::protobuf::Arena*, const GeneratedCodeInfo& rhs);
+  #endif
   GeneratedCodeInfo(GeneratedCodeInfo&& from) noexcept
     : GeneratedCodeInfo() {
     *this = ::std::move(from);
@@ -9700,6 +9964,12 @@ class PROTOBUF_EXPORT GeneratedCodeInfo final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+  #ifdef PROTOBUF_NEW_CONSTRUCTORS
+    inline explicit constexpr Impl_(::google::protobuf::internal::ConstantInitialized);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*);
+    inline Impl_(::google::protobuf::internal::InternalVisibility, ::google::protobuf::Arena*, const Impl_&);
+    inline ~Impl_();
+  #endif  // PROTOBUF_NEW_CONSTRUCTORS
     ::google::protobuf::RepeatedPtrField< ::google::protobuf::GeneratedCodeInfo_Annotation > annotation_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER;
