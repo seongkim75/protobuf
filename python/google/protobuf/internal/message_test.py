@@ -46,6 +46,7 @@ import pickle
 import pydoc
 import sys
 import unittest
+from unittest import mock
 import warnings
 
 cmp = lambda x, y: (x > y) - (x < y)
@@ -1251,6 +1252,21 @@ class MessageTest(unittest.TestCase):
     self.assertEqual(float, type(m.repeated_double[0]))
     self.assertEqual(bool, type(m.repeated_bool[0]))
     self.assertEqual(True, m.repeated_bool[0])
+
+  def testEquality(self, message_module):
+    m = message_module.TestAllTypes()
+    m2 = message_module.TestAllTypes()
+    self.assertEqual(m, m)
+    self.assertEqual(m, m2)
+    self.assertEqual(m2, m)
+
+    different_m = message_module.TestAllTypes()
+    different_m.repeated_float.append(1)
+    self.assertNotEqual(m, different_m)
+    self.assertNotEqual(different_m, m)
+
+    self.assertEqual(mock.ANY, m)
+    self.assertEqual(m, mock.ANY)
 
 
 # Class to test proto2-only features (required, extensions, etc.)
